@@ -1,3 +1,4 @@
+/* quitamos el padding y margin que se agrega automaticamente por el browser */
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +7,8 @@
 body{
     background-color: black;
     color: #F6F6F6;
-    
+    height: 100vh; /* v: es viewport (vista de la pagina) este viewport se agrega en el head del html. y h: heigth*/   
+    box-sizing: border-box; /*evitar que este componente sea mas grande que el elemento padre. Osea que siempre quede dentro del elemento padre.*/
 }
 
 h1 {
@@ -21,16 +23,6 @@ h1 {
 
 .titulo-destaque {
     color:#22D4FD ;
-}
-
-.texto_completo{
-    width: 615px;
-    height: 482px;
-    top: 289px;
-    left: 345px;
-    gap: 0px;
-    opacity: 0px;
-
 }
 
 img {
