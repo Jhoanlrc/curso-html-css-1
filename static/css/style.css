@@ -25,12 +25,16 @@ body{
 .presentacion{
     display: flex; /* todo el codigo de css de este apartado tiene relacion con flexbox*/
     align-items: center; /* centrar los elementos en la pantalla*/
-    margin: 10%; /* Dar un poco de margen a todos los elementos*/
+    margin: 10% 15%; /* Dar un poco de margen a todos los elementos*/
     justify-content: space-between; /* espacio entre los elementos */
 }
 
 .presentacion__contenido{
     width: 615;
+    display: flex;
+    flex-direction: column; /* Aliar todo lo que esta dentro de esta clase como una columna*/
+    gap: 40px; /*Espacio entre los elementos hijos*/
+
 }
 
 .presentacion__contenido__titulo{
