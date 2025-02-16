@@ -7,6 +7,7 @@
 }
 
 body{
+
     background-color: black;
     color: #F6F6F6;
     height: 100vh; /* v: es viewport (vista de la pagina) este viewport se agrega en el head del html. h: heigth. Resumen vista alta.*/   
@@ -40,6 +41,26 @@ body{
 .presentacion__contenido__texto{
     font-size: 24px;
     font-family: "Montserrat", serif;
+
+}
+
+.presentacion__contenido__enlaces{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Esta clase la comparten ambos enlaces*/
+.presentacion__enlaces{
+    width: 280px;
+    background-color: #22D4FD;
+    text-align: center;
+    padding: 21.5px 0; /* vertical horizontal*/
+    border-radius: 16px;
+    color: black;
+    font-family: "Montserrat", serif;
+    font-size: 24px;
+    font-weight: 600; /*Escogemos el tipo de texto de la fuente seleccionada*/
+    text-decoration: none; /* Quitamos el subrayado que aparece en los enlaces s*/
 
 }
 
