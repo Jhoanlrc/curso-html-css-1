@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* quitamos el padding y margin que se agrega automaticamente por el browser. De esta forma nos da mas accesibilidad para el estilo */
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 body{
-
-    background-color: black;
-    color: #F6F6F6;
     height: 100vh; /* v: es viewport (vista de la pagina) este viewport se agrega en el head del html. h: heigth. Resumen vista alta.*/   
     box-sizing: border-box; /*evitar que este componente sea mas grande que el elemento padre. Osea que siempre quede dentro del elemento padre.*/
+    background-color: black;
+    color: #F6F6F6;
 }
 
 
@@ -30,11 +29,10 @@ body{
 }
 
 .presentacion__contenido{
-    width: 615;
+    width: 615px;
     display: flex;
     flex-direction: column; /* Aliar todo lo que esta dentro de esta clase como una columna*/
     gap: 40px; /*Espacio entre los elementos hijos*/
-
 }
 
 .presentacion__contenido__titulo{
@@ -48,13 +46,13 @@ body{
 
 }
 
-.presentacion__contenido__enlaces{
+.presentacion__enlaces{
     display: flex;
     justify-content: space-between;
 }
 
 /*Esta clase la comparten ambos enlaces*/
-.presentacion__enlaces{
+.presentacion__enlaces__link{
     width: 280px;
     background-color: #22D4FD;
     text-align: center;
@@ -67,4 +65,3 @@ body{
     text-decoration: none; /* Quitamos el subrayado que aparece en los enlaces s*/
 
 }
-
