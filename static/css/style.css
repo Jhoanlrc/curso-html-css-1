@@ -8,9 +8,9 @@
 
 /* Definir variables  */
 :root{
-    --color-primario : #09122C;
-    --color-secundario : #872341;
-    --color-terciario: #BE3144; 
+    --color-primario : black;
+    --color-secundario : #F6F6F6;
+    --color-terciario: #22D4FD; 
     --color-hover: #272727;
     --fuente-montserrat: "Montserrat", serif;
     --fuente-krona: "Krona One", serif;
@@ -41,17 +41,16 @@ body{
     
 }
 
-
-
 .presentacion{
     display: flex; /* todo el codigo de css de este apartado tiene relacion con flexbox*/
     align-items: center; /* centrar los elementos en la pantalla*/
     padding: 5% 15%;
     justify-content: space-between; /* espacio entre los elementos */
+    gap: 82px;
 }
 
 .presentacion__contenido{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column; /* Aliar todo lo que esta dentro de esta clase como una columna*/
     gap: 40px; /*Espacio entre los elementos hijos*/
@@ -87,7 +86,7 @@ body{
 
 /*Esta clase la comparten ambos enlaces*/
 .presentacion__enlaces__link{
-    width: 378px;
+    width: 50%;
     text-align: center;
     padding: 21.5px 0; /* vertical horizontal*/
     border-radius: 16px;
@@ -109,6 +108,10 @@ body{
     background-color: var(--color-hover);
 }
 
+.presentacion__imagen{
+    width: 50%;
+}
+
 .footer {
     background-color: var(--color-terciario);
     padding: 24px; /*dar padding al elemento en relacion con los contenedores.*/
@@ -116,4 +119,32 @@ body{
     font-size: 1.5rem;
     font-family: "Montserrat", serif;
     color:var(--color-primario);
+}
+
+/* Media queries: Cuando el ancho de la pantalla sea menor que esto*/
+@media (max-width : 1200px ) {
+
+    .header{
+     padding: 10%;   
+    }
+    
+    .header__menu{
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse; /* Alinear como columnas los elementos hijos. Reversa para que los ordene de manera descendente respecto a la ubicacion de los
+        elementos hijos*/
+        padding: 5%;
+    }
+
+    .presentacion__contenido{
+        width: auto; /*Que se ajuste automaticamente respecto al elemento padre*/
+    }
+
+    
+
+    
+
+    
+
 }
