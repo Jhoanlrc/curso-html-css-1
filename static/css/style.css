@@ -6,11 +6,21 @@
     margin: 0;
 }
 
+/* Definir variables  */
+:root{
+    --color-primario : black;
+    --color-secundario : #F6F6F6;
+    --color-azul: #22D4FD; 
+    --fuente-montserrat: "Montserrat", serif;
+    --fuente-krona: "Krona One", serif;
+    --color-hover: #272727;
+}
+
 body{
     /*height: 100vh; */ /* v: es viewport (vista de la pagina) este viewport se agrega en el head del html. h: heigth. Resumen vista alta.*/   
     box-sizing: border-box; /*evitar que este componente sea mas grande que el elemento padre. Osea que siempre quede dentro del elemento padre.*/
-    background-color: black;
-    color: #F6F6F6;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
 }
 
 .header{
@@ -24,8 +34,8 @@ body{
 
 .header__menu__link{
     font-size: 24px;
-    font-family: "Montserrat", serif;
-    color: #22D4FD;
+    font-family: var(--fuente-montserrat);
+    color: var(--color-azul);
     font-weight: 600; /*Escogemos el tipo de texto de la fuente seleccionada*/
     text-decoration: none;
     
@@ -49,18 +59,16 @@ body{
 
 .presentacion__contenido__titulo{
     font-size: 36px;
-    font-family: "Krona One", serif;
+    font-family: var(--fuente-krona);
 }
 
 .titulo-destaque {
-    color:#22D4FD ;
+    color: var(--color-azul) ;
 }
 
 .presentacion__contenido__texto{
     font-size: 24px;
-    font-family: "Montserrat", serif;
-
-
+    font-family: var(--fuente-montserrat);
 }
 
 .presentacion__enlaces{
@@ -83,12 +91,12 @@ body{
     text-align: center;
     padding: 21.5px 0; /* vertical horizontal*/
     border-radius: 16px;
-    color: #F6F6F6;
-    font-family: "Montserrat", serif;
+    color: var(--color-secundario);
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 600; /*Escogemos el tipo de texto de la fuente seleccionada*/
     text-decoration: none; /* Quitamos el subrayado que aparece en los enlaces s*/
-    border: 2px solid #22D4FD; /* Para agregar un borde, siempre debemos agregar el tamaño */
+    border: 2px solid var(--color-azul); /* Para agregar un borde, siempre debemos agregar el tamaño */
     border-radius: 8px;
     display: flex; /* al agregar la etiqueta img dentro del ancla se vuelve un container o cajon, por lo tanto se le agrega el display*/
     justify-content: center;
@@ -98,14 +106,14 @@ body{
 
 /* Con esta propiedad hover, podemos cambiar de color cuando el mouse pase sobre el elemento*/
 .presentacion__enlaces__link:hover{
-    background-color: #272727;
+    background-color: var(--color-hover);
 }
 
 .footer {
-    background-color: #22D4FD;
+    background-color: var(--color-azul);
     padding: 24px; /*dar padding al elemento en relacion con los contenedores.*/
     text-align: center;
     font-size: 24px;
     font-family: "Montserrat", serif;
-    color:black;
+    color:var(--color-primario);
 }
