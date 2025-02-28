@@ -8,12 +8,12 @@
 
 /* Definir variables  */
 :root{
-    --color-primario : black;
-    --color-secundario : #F6F6F6;
-    --color-azul: #22D4FD; 
+    --color-primario : #09122C;
+    --color-secundario : #872341;
+    --color-terciario: #BE3144; 
+    --color-hover: #272727;
     --fuente-montserrat: "Montserrat", serif;
     --fuente-krona: "Krona One", serif;
-    --color-hover: #272727;
 }
 
 body{
@@ -33,9 +33,9 @@ body{
 }
 
 .header__menu__link{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
-    color: var(--color-azul);
+    color: var(--color-terciario);
     font-weight: 600; /*Escogemos el tipo de texto de la fuente seleccionada*/
     text-decoration: none;
     
@@ -58,16 +58,16 @@ body{
 }
 
 .presentacion__contenido__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fuente-krona);
 }
 
 .titulo-destaque {
-    color: var(--color-azul) ;
+    color: var(--color-terciario) ;
 }
 
 .presentacion__contenido__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
 }
 
@@ -81,7 +81,7 @@ body{
 
 .presentacion__enlaces__subtitulo{
     font-family: "Krona One", serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 20px
 }
 
@@ -93,10 +93,10 @@ body{
     border-radius: 16px;
     color: var(--color-secundario);
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600; /*Escogemos el tipo de texto de la fuente seleccionada*/
     text-decoration: none; /* Quitamos el subrayado que aparece en los enlaces s*/
-    border: 2px solid var(--color-azul); /* Para agregar un borde, siempre debemos agregar el tamaño */
+    border: 2px solid var(--color-terciario); /* Para agregar un borde, siempre debemos agregar el tamaño */
     border-radius: 8px;
     display: flex; /* al agregar la etiqueta img dentro del ancla se vuelve un container o cajon, por lo tanto se le agrega el display*/
     justify-content: center;
@@ -110,10 +110,10 @@ body{
 }
 
 .footer {
-    background-color: var(--color-azul);
+    background-color: var(--color-terciario);
     padding: 24px; /*dar padding al elemento en relacion con los contenedores.*/
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Montserrat", serif;
     color:var(--color-primario);
 }
